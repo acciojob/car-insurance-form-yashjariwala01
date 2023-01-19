@@ -18,45 +18,53 @@
 </head>
 <body>
     <h1>Car Insurance Form</h1>
-    <form action="#" method="post"></form>
-    <div>
-        <label  for="name">Name</label><br>
-        <input id="#name"name="name" type="text">
-    </div>
-    <div>
-        <label  for="email id">E-mail ID</label><br>
-        <input id="#email" name="email" type="email" placeholder="ex: john@example.com">
-    </div>
-    <div>
-        <label for="gender">Gender</label><br>
-        <input name="gender" type="radio">Male
-        <input name="gender" type="radio">Female
-        <input name="gender" type="radio">others
-    </div>
-    <div>
-        <label for="car-brands">Car Brands</label><br>
-        <input id="#cars"name="brands" type="checkbox">BMW
-        <input id="#cars" name="brands" type="checkbox">Audi
-        <input id="#cars"name="brands" type="checkbox">Mercedez
-    </div>
-    <div>
-        <label for="car-age">Car Age</label><br>
-        <input id="#carage" name="years-used" type="radio">0-1
-        <input id="#carage" name="years-used" type="radio">1-3
-        <input id="#carage" name="years-used" type="radio">3-5
-        <input id="#carage" name="years-used" type="radio">5 or above
-    </div>
-    <div>
-        <label for="purchase-date">Date of Purchase(dop)</label><br>
-        <input id="#dop" type="date" name="date-of-purchase">
-    </div>
-    <div>
-        <label for="password">Password</label><br>
-        <input id="#password" name="password" type="password">
-    </div>
-    <div>
-        <input type="button" name="submit" value="submit">
-    </div>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name</label><br />
+        <input id="#name" name="name" type="text" required/>
+      </div>
+      <div>
+        <label for="email id">E-mail ID</label><br />
+        <input
+          id="#email"
+          name="email"
+          type="email"
+          placeholder="ex: john@example.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="gender">Gender</label><br />
+        <input name="gender" type="radio" required/>Male
+        <input name="gender" type="radio" required/>Female
+        <input name="gender" type="radio" required/>others
+      </div>
+      <div>
+        <select name="carbrands" id="cars">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Mercedez">Mercedez</option>
+        </select>
+      </div>
+      <div>
+        <label for="car-age">Car Age</label><br />
+        <input id="carage" name="years-used" type="radio" required/>0-1
+        <input id="carage" name="years-used" type="radio" required/>1-3
+        <input id="carage" name="years-used" type="radio" required/>3-5
+        <input id="carage" name="years-used" type="radio" required/>5 or above
+      </div>
+      <div>
+        <label for="purchase-date">Date of Purchase(dop)</label><br />
+        <input id="dop" type="date" name="date-of-purchase" required />
+      </div>
+      <div>
+        <label for="password">Password</label><br />
+        <input id="#password" name="password" type="password" required />
+      </div>
+      <div>
+        <input type="submit" name="submit" value="submit" />
+      </div>
+    </form>
 </body>
 </html>
     <script type="text/javascript" src="./script.js">
